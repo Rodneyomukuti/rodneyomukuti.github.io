@@ -12,6 +12,8 @@ header {
     color: white;
     padding: 1rem 0;
     text-align: center;
+    font-size: 1.5rem; /* Normal font size for the header */
+    text-transform: capitalize; /* Ensures Title Case */
 }
 
 nav ul {
@@ -54,10 +56,11 @@ section {
 
 section h2 {
     color: #007BFF;
-    font-size: 1.8rem;
+    font-size: 1.5rem; /* Reduced font size for subtitles */
     margin-bottom: 1rem;
     border-bottom: 2px solid #f4f4f9;
     padding-bottom: 0.5rem;
+    text-transform: capitalize; /* Ensures Title Case */
 }
 
 .member {
