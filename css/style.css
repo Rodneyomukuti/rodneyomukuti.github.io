@@ -83,11 +83,11 @@ section h2 {
 
 /* Ensure partner logos are on the left and fully visible */
 .partner img {
-    width: 120px;
+    width: 100px;
     height: auto;
     margin-right: 1rem;
-    object-fit: contain; /* Prevents cropping */
-    max-height: 80px; /* Ensures logos fit well */
+    object-fit: cover; /* Prevents cropping */
+    max-height: 100px; /* Ensures logos fit well */
 }
 
 /* Ensure text beside the logos */
