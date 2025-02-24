@@ -63,7 +63,6 @@ section h2 {
     text-transform: capitalize;
 }
 
-/* Member, Partner, and Funder Sections */
 .member, .partner, .funder {
     display: flex;
     align-items: center;
@@ -73,29 +72,22 @@ section h2 {
     border-radius: 8px;
     background: #f9f9ff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: center;
 }
 
-/* Adjusted Partner Styling */
-.partner {
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-/* Ensure partner logos are on the left and fully visible */
-.partner img {
+.member img, .partner img, .funder img {
+    border-radius: 50%;
     width: 100px;
-    height: auto;
+    height: 100px;
     margin-right: 1rem;
-    object-fit: cover; /* Prevents cropping */
-    max-height: 100px; /* Ensures logos fit well */
+    object-fit: cover;
 }
 
-/* Ensure text beside the logos */
-.partner div {
-    flex: 1;
+.member div, .partner div, .funder div {
+    max-width: calc(100% - 120px);
 }
 
-/* Funders Section */
 .funders {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -122,7 +114,6 @@ footer a:hover {
     color: #cce7ff;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -138,15 +129,8 @@ footer a:hover {
         text-align: left;
     }
 
-    .partner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .partner img {
+    .member img, .partner img, .funder img {
         margin-bottom: 1rem;
-        margin-right: 0;
     }
 
     section {
