@@ -63,7 +63,7 @@ section h2 {
     text-transform: capitalize;
 }
 
-.member {
+.member, .partner, .funder {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
@@ -72,9 +72,11 @@ section h2 {
     border-radius: 8px;
     background: #f9f9ff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: center;
 }
 
-.member img {
+.member img, .partner img, .funder img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -82,8 +84,16 @@ section h2 {
     object-fit: cover;
 }
 
-.member div {
+.member div, .partner div, .funder div {
     max-width: calc(100% - 120px);
+}
+
+.funders {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 footer {
@@ -104,73 +114,6 @@ footer a:hover {
     color: #cce7ff;
 }
 
-/* Partners Section */
-.partners {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-}
-
-.partner {
-    background: #f9f9ff;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.partner img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 0.5rem;
-}
-
-.partner a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.partner a:hover {
-    text-decoration: underline;
-}
-
-/* Funders Section */
-.funders {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1rem;
-}
-
-.funder {
-    background: #ffffff;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    width: 200px;
-}
-
-.funder img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 0.5rem;
-}
-
-.funder a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.funder a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -180,17 +123,21 @@ footer a:hover {
         margin: 5px 0;
     }
 
-    .member {
+    .member, .partner, .funder {
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
     }
 
-    .member img {
+    .member img, .partner img, .funder img {
         margin-bottom: 1rem;
     }
 
     section {
         padding: 1.5rem;
+    }
+
+    .funders {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
