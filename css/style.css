@@ -2,13 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 /* Members Section */
 .members-container {
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 .member img {
@@ -19,22 +17,27 @@ body {
 /* Partners Section */
 .partners-container {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    flex-direction: column;
+    gap: 20px;
 }
 .partner {
-    text-align: center;
-    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
 }
 .partner img {
-    width: 150px;
+    width: 100px;
     height: auto;
-    display: block;
-    margin: 0 auto;
+}
+.partner h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.partner .description {
+    flex-grow: 1; /* Allows description to expand */
 }
 .visit-btn {
-    display: inline-block;
-    margin-top: 10px;
     padding: 8px 15px;
     background-color: #0044cc;
     color: #fff;
@@ -51,9 +54,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    justify-content: center;
     max-width: 500px;
-    margin: auto;
 }
 .funder img {
     width: 150px;
