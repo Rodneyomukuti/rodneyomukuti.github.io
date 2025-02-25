@@ -45,6 +45,10 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
+main {
+    padding: 2rem 0; /* Adds padding for the main content */
+}
+
 section {
     padding: 2rem;
     margin: 0 auto;
@@ -52,6 +56,7 @@ section {
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin-bottom: 2rem; /* Adds space between sections */
 }
 
 section h2 {
@@ -63,8 +68,12 @@ section h2 {
     text-transform: capitalize; /* Ensures Title Case */
 }
 
+section h3 {
+    color: #0056b3;
+    font-size: 1.25rem; /* Size for subheadings */
+    margin-top: 1.5rem; /* Space above subheadings */
+}
 
-/* Members Section */
 .member {
     display: flex;
     align-items: center;
@@ -88,61 +97,21 @@ section h2 {
     max-width: calc(100% - 120px);
 }
 
-/* Partners Section */
-.partner {
+.partner, .funder {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     background: #f9f9ff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-.partner img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-right: 1rem;
-    object-fit: cover;
-}
-.partner h3 {
-    margin: 0;
-    font-size: 18px;
-}
-.partner .description {
-    flex-grow: 1; /* Allows description to expand */
-}
-.visit-btn {
-    padding: 8px 15px;
-    background-color: #0044cc;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-.visit-btn:hover {
-    background-color: #002a80;
-}
 
-/* Funders Section */
-.funders-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #f9f9ff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-
-}
-.funder img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+.partner img, .funder img {
+    width: 80px; /* Fixed width for logos */
+    height: auto; /* Maintain aspect ratio */
     margin-right: 1rem;
-    object-fit: cover;
 }
 
 footer {
@@ -187,3 +156,12 @@ footer a:hover {
         padding: 1.5rem;
     }
 
+    .partner, .funder {
+        flex-direction: column; /* Stack partner/funder items vertically on small screens */
+        align-items: flex-start;
+    }
+
+    .partner img, .funder img {
+        margin-bottom: 0.5rem; /* Space below logos */
+    }
+}
