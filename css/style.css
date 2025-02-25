@@ -12,8 +12,8 @@ header {
     color: white;
     padding: 1rem 0;
     text-align: center;
-    font-size: 1.5rem; /* Normal font size for the header */
-    text-transform: capitalize; /* Ensures Title Case */
+    font-size: 1.5rem;
+    text-transform: capitalize;
 }
 
 nav ul {
@@ -45,10 +45,15 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-section {
+main {
     padding: 2rem;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1000px;
+}
+
+section {
+    padding: 2rem;
+    margin-bottom: 2rem;
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -56,36 +61,83 @@ section {
 
 section h2 {
     color: #007BFF;
-    font-size: 1.5rem; /* Reduced font size for subtitles */
+    font-size: 1.7rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #f4f4f9;
+    border-bottom: 3px solid #f4f4f9;
     padding-bottom: 0.5rem;
-    text-transform: capitalize; /* Ensures Title Case */
 }
 
-.member {
+section h3 {
+    color: #0056b3;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Research Themes Styling */
+.research-list {
+    margin-left: 20px;
+}
+
+.research-list li {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.research-list li p {
+    font-weight: normal;
+    margin-top: 0.3rem;
+    color: #444;
+}
+
+/* Partner Organization Section */
+.partner {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     background: #f9f9ff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
 }
 
-.member img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-right: 1rem;
-    object-fit: cover;
+.partner img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-left: auto;
+    object-fit: contain;
 }
 
-.member div {
-    max-width: calc(100% - 120px);
+.partner a {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.9rem;
 }
 
+.partner a:hover {
+    background: #0056b3;
+}
+
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 1rem 0;
@@ -126,5 +178,14 @@ footer a:hover {
 
     section {
         padding: 1.5rem;
+    }
+
+    .partner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .partner img {
+        margin: 1rem 0;
     }
 }
