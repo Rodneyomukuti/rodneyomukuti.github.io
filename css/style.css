@@ -2,190 +2,60 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f9;
-}
-
-header {
-    background: #007BFF;
-    color: white;
-    padding: 1rem 0;
     text-align: center;
-    font-size: 1.5rem;
-    text-transform: capitalize;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Members Section */
+.members-container {
     display: flex;
     justify-content: center;
-    background: #0056b3;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+}
+.member img {
+    width: 150px;
+    border-radius: 50%;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.75rem 1.5rem;
-    display: block;
-    font-size: 1rem;
-    transition: background 0.3s, transform 0.2s;
-}
-
-nav ul li a:hover {
-    background: #004080;
-    border-radius: 5px;
-    transform: scale(1.05);
-}
-
-main {
-    padding: 2rem;
-    margin: 0 auto;
-    max-width: 1000px;
-}
-
-section {
-    padding: 2rem;
-    margin-bottom: 2rem;
-    background: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-section h2 {
-    color: #007BFF;
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-    border-bottom: 3px solid #f4f4f9;
-    padding-bottom: 0.5rem;
-}
-
-section h3 {
-    color: #0056b3;
-    font-size: 1.3rem;
-    margin-top: 1.5rem;
-}
-
-section p {
-    margin-bottom: 1rem;
-}
-
-ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-ul li {
-    margin-bottom: 0.5rem;
-}
-
-/* Research Themes Styling */
-.research-list {
-    margin-left: 20px;
-}
-
-.research-list li {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.research-list li p {
-    font-weight: normal;
-    margin-top: 0.3rem;
-    color: #444;
-}
-
-/* Partner Organization Section */
-.partner {
+/* Partners Section */
+.partners-container {
     display: flex;
-    align-items: center;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #f9f9ff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1.5rem;
+    justify-content: center;
+    gap: 30px;
 }
-
-.partner img {
-    width: 80px;
-    height: 80px;
-    border-radius: 5px;
-    margin-left: auto;
-    object-fit: contain;
-}
-
-.partner a {
-    display: inline-block;
-    background: #007BFF;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 0.9rem;
-}
-
-.partner a:hover {
-    background: #0056b3;
-}
-
-/* Footer Styling */
-footer {
+.partner {
     text-align: center;
-    padding: 1rem 0;
-    background: #007BFF;
-    color: white;
-    margin-top: 2rem;
-    font-size: 0.9rem;
+    width: 200px;
+}
+.partner img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.visit-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #0044cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.visit-btn:hover {
+    background-color: #002a80;
 }
 
-footer a {
-    color: white;
-    text-decoration: underline;
+/* Funders Section */
+.funders-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
 }
-
-footer a:hover {
-    color: #cce7ff;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    .member {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    .member img {
-        margin-bottom: 1rem;
-    }
-
-    section {
-        padding: 1.5rem;
-    }
-
-    .partner {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .partner img {
-        margin: 1rem 0;
-    }
+.funder img {
+    width: 150px;
+    height: auto;
 }
