@@ -74,7 +74,7 @@ section h3 {
     margin-top: 1.5rem; /* Space above subheadings */
 }
 
-.member {
+.member, .partner {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
@@ -85,33 +85,30 @@ section h3 {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.member img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+.member img, .partner img {
+    border-radius: 50%; /* Circular format for images */
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
     margin-right: 1rem;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image fits within the circle */
 }
 
-.member div {
+.member div, .partner div {
     max-width: calc(100% - 120px);
 }
 
-.partner, .funder {
+.funder {
     display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #f9f9ff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: center; /* Center the funders */
+    flex-wrap: wrap; /* Allow wrapping */
+    margin-bottom: 2rem;
 }
 
-.partner img, .funder img {
-    width: 80px; /* Fixed width for logos */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 1rem;
+.funder img {
+    width: 80px; /* Fixed width for funder logos */
+    height: 80px; /* Fixed height for funder logos */
+    border-radius: 50%; /* Circular format for funder logos */
+    margin: 10px; /* Space between logos */
 }
 
 footer {
@@ -142,13 +139,13 @@ footer a:hover {
         margin: 5px 0;
     }
 
-    .member {
-        flex-direction: column;
+    .member, .partner {
+        flex-direction: column; /* Stack member/partner items vertically on small screens */
         align-items: flex-start;
         text-align: left;
     }
 
-    .member img {
+    .member img, .partner img {
         margin-bottom: 1rem;
     }
 
@@ -156,12 +153,8 @@ footer a:hover {
         padding: 1.5rem;
     }
 
-    .partner, .funder {
-        flex-direction: column; /* Stack partner/funder items vertically on small screens */
-        align-items: flex-start;
-    }
-
-    .partner img, .funder img {
-        margin-bottom: 0.5rem; /* Space below logos */
+    .funder {
+        flex-direction: row; /* Keep funders in a row on larger screens */
+        justify-content: center;
     }
 }
