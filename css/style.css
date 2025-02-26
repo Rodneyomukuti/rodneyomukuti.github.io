@@ -99,7 +99,6 @@ section h3 {
 
 .funder {
     display: flex;
-    justify-content: center; /* Center the funders */
     flex-wrap: wrap; /* Allow wrapping */
     margin-bottom: 2rem;
 }
@@ -155,6 +154,5 @@ footer a:hover {
 
     .funder {
         flex-direction: row; /* Keep funders in a row on larger screens */
-        justify-content: center;
     }
 }
