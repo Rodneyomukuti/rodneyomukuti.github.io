@@ -87,14 +87,14 @@ section h3 {
 
 .member img, .partner img {
     border-radius: 100%; /* Circular format for images */
-    width: 150px; /* Fixed width */
+    width: 200px; /* Fixed width */
     height: auto; /* Auto adjust height */
     margin-right: 1rem;
     object-fit: cover; /* Ensures the image fits within the circle */
 }
 
 .member div, .partner div {
-    max-width: calc(100% - 170px); /* Adjusted max-width to accommodate the new image width */
+    max-width: calc(100% - 200px); /* Adjusted max-width to accommodate the new image width */
 }
 
 .partner a {
@@ -113,7 +113,7 @@ section h3 {
 }
 
 .funder img {
-    width: 150px; /* Updated width to match member and partner */
+    width: 200px; /* Updated width to match member and partner */
     height: auto; /* Auto adjust height */
     border-radius: 100%; /* Circular format for funder logos */
     margin: 10px; /* Space between logos */
