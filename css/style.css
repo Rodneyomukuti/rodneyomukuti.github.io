@@ -86,7 +86,7 @@ section h3 {
 }
 
 .member img, .partner img {
-    border-radius: 50%; /* Circular format for images */
+    border-radius: 100%; /* Circular format for images */
     width: 100px; /* Fixed width */
     height: 100px; /* Fixed height */
     margin-right: 1rem;
@@ -105,9 +105,9 @@ section h3 {
 }
 
 .funder img {
-    width: 80px; /* Fixed width for funder logos */
-    height: 80px; /* Fixed height for funder logos */
-    border-radius: 50%; /* Circular format for funder logos */
+    width: 100px; /* Fixed width for funder logos */
+    height: 100px; /* Fixed height for funder logos */
+    border-radius: 100%; /* Circular format for funder logos */
     margin: 10px; /* Space between logos */
 }
 
