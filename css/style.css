@@ -162,6 +162,6 @@ footer a:hover {
     }
 
     .funder {
-        flex-direction: row; /* Keep funders in a row on larger screens */
+        flex-direction: column; /* Keep funders in a row on larger screens */
     }
 }
