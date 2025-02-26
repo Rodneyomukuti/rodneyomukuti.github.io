@@ -87,14 +87,14 @@ section h3 {
 
 .member img, .partner img {
     border-radius: 100%; /* Circular format for images */
-    width: 100px; /* Fixed width */
-    height: 100px; /* Fixed height */
+    width: 150px; /* Fixed width */
+    height: auto; /* Auto adjust height */
     margin-right: 1rem;
     object-fit: cover; /* Ensures the image fits within the circle */
 }
 
 .member div, .partner div {
-    max-width: calc(100% - 120px);
+    max-width: calc(100% - 170px); /* Adjusted max-width to accommodate the new image width */
 }
 
 .partner a {
