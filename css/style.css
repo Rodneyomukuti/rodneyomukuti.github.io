@@ -97,6 +97,15 @@ section h3 {
     max-width: calc(100% - 120px);
 }
 
+.partner a {
+    margin-left: 0; /* Remove any margin that might be causing space */
+    margin-right: 0.5rem; /* Optional: Add a small space after the name */
+}
+
+.partner p {
+    margin-top: 0; /* Ensure no top margin is applied to paragraphs */
+}
+
 .funder {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping */
