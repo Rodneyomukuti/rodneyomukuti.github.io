@@ -98,17 +98,17 @@ section h3 {
 }
 
 .partner a {
-    margin-left: 0; /* Remove any margin that might be causing space */
-    margin-right: 0.5rem; /* Optional: Add a small space after the name */
+    margin: 0; /* Remove any margin */
+    display: inline; /* Ensure inline display */
 }
 
 .partner p {
-    margin-top: 0; /* Ensure no top margin is applied to paragraphs */
+    margin: 0; /* Ensure no margin */
 }
 
 .funder {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping */
+    align-items: center; /* Center aligns items vertically */
     margin-bottom: 2rem;
 }
 
@@ -117,6 +117,11 @@ section h3 {
     height: auto; /* Auto adjust height */
     border-radius: 100%; /* Circular format for funder logos */
     margin: 10px; /* Space between logos */
+}
+
+.funder a {
+    margin-left: 10px; /* Adjust spacing as needed */
+    line-height: 1.6; /* Ensure consistent line height */
 }
 
 footer {
@@ -163,5 +168,10 @@ footer a:hover {
 
     .funder {
         flex-direction: column; /* Keep funders in a row on larger screens */
+    }
+
+    button {
+        width: 100%; /* Full width on small screens */
+        margin: 5px 0; /* Margin between buttons */
     }
 }
