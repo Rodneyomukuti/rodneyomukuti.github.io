@@ -97,14 +97,14 @@ p {
 }
 
 .entry {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .entry img {
-    width: 100px;
-    height: auto;
-    margin-right: 10px;
-    float: left;
+    max-width: 100px; /* Set a max width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+    float: left; /* Align images to the left */
 }
 
 /* Partner and member styles */
