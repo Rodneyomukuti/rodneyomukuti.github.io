@@ -93,22 +93,22 @@ p {
 }
 
 .tabcontent img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
     width: 100px; /* Set a fixed width for research theme images */
-    height: auto; /* Maintain aspect ratio */
 }
 
 .entry {
     margin: 15px 0;
+    overflow: hidden; /* Clear floats */
 }
 
 .entry img {
     width: 100px; /* Set a fixed width for entry images */
     height: auto; /* Maintain aspect ratio */
     margin-right: 10px;
-    float: left;
+    float: left; /* Align images to the left */
 }
 
 .partner, .member, .funder {
