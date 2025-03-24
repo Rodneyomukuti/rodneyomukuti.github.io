@@ -1,8 +1,8 @@
 /* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
+* {
     margin: 0;
     padding: 0;
-    list-style: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,9 +12,10 @@ body {
     color: #333;
 }
 
+/* Header styles */
 header {
     background: #007BFF;
-    color: #fff;
+    color: white;
     padding: 20px 0;
     text-align: center;
 }
@@ -24,17 +25,17 @@ header h1 {
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -43,13 +44,14 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Main content styles */
 main {
     padding: 20px;
 }
 
 section {
     margin-bottom: 40px;
-    background: #fff;
+    background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -60,15 +62,11 @@ h2 {
     margin-bottom: 15px;
 }
 
-h3 {
-    margin-top: 15px;
-    color: #333;
-}
-
 p {
     margin-bottom: 15px;
 }
 
+/* Tab styles */
 .tab {
     display: flex;
     justify-content: space-around;
@@ -93,33 +91,32 @@ p {
 }
 
 .tabcontent img {
-    max-width: 100%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px;
-    width: 100px; /* Set a fixed width for research theme images */
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
 }
 
 .entry {
-    margin: 15px 0;
-    overflow: hidden; /* Clear floats */
+    margin-bottom: 20px;
 }
 
 .entry img {
-    width: 100px; /* Set a fixed width for entry images */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px;
+    height: auto;
     margin-right: 10px;
-    float: left; /* Align images to the left */
+    float: left;
 }
 
+/* Partner and member styles */
 .partner, .member, .funder {
     display: flex;
     align-items: center;
-    margin: 15px 0;
+    margin-bottom: 20px;
 }
 
 .partner img, .member img, .funder img {
-    width: 100px; /* Set a fixed width for partner, member, and funder images */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px;
+    height: auto;
     margin-right: 15px;
 }
 
@@ -132,12 +129,36 @@ p {
     text-decoration: underline;
 }
 
+/* Footer styles */
 footer {
     text-align: center;
     padding: 20px 0;
     background: #007BFF;
-    color: #fff;
+    color: white;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .tab {
+        flex-direction: column;
+    }
+
+    .tab button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .entry img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
+    }
 }
