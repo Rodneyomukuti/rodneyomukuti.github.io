@@ -91,9 +91,9 @@ p {
 }
 
 .tabcontent {
-    display: block; 
-    visibility: visible;
-    opacity: 1;
+    display: block !important; 
+    visibility: visible !important;
+    opacity: 1 !important;
     height: auto;
 }
 
