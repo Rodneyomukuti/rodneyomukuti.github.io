@@ -107,18 +107,24 @@ h3 {
 }
 
 .partner img, .member img, .funder img {
-    width: 80px;
+    width: 80px; /* Adjust the size as needed */
     height: auto;
-    margin-right: 15px;
+    margin-right: 15px; /* Space between image and text */
 }
 
 .partner a, .funder a {
-    color: #007BFF;
-    text-decoration: none;
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin-right: 5px; /* Space between link and description */
 }
 
 .partner a:hover, .funder a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Optional: Adjust the paragraph margin */
+.partner p {
+    margin: 0; /* Remove default margin */
 }
 
 /* Resource Section */
