@@ -87,7 +87,7 @@ p {
 }
 
 .tabcontent {
-    display: none;
+    display: block;
 }
 
 .tabcontent img {
