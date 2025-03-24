@@ -33,56 +33,66 @@
 
     <section id="research-themes">
   <h2>Research Themes</h2>
-  <p>
-    Our research integrates genetics, microbiome studies, disease ecology, and ecological assessments to enhance conservation efforts across diverse species and ecosystems. We explore species diversity, population structure, evolutionary history, and conservation strategies using cutting-edge genetic and genomic tools.
-  </p>
+  
+  <div class="tab">
+    <button class="tablinks" onclick="openTheme(event, 'PopulationGenetics')">Population Genetics</button>
+    <button class="tablinks" onclick="openTheme(event, 'Microbiome')">Microbiome</button>
+    <button class="tablinks" onclick="openTheme(event, 'DiseaseEcology')">Disease Ecology</button>
+    <button class="tablinks" onclick="openTheme(event, 'Ecology')">Ecology</button>
+    <button class="tablinks" onclick="openTheme(event, 'Support')">Support</button>
+  </div>
+  
+  <div id="PopulationGenetics" class="tabcontent">
+    <h3>Population Genetics</h3>
+    <p>Understanding species diversity, connectivity, and evolutionary history.</p>
+    <img src="corals.jpg" alt="Coral research">
+    <ul>
+      <li><strong>Corals:</strong> Genetic diversity, thermotolerance markers, reef connectivity.</li>
+      <li><strong>Billfish:</strong> Evolutionary genetics for sustainable fisheries.</li>
+      <li><strong>Elephants:</strong> Genetic connectivity, habitat fragmentation effects.</li>
+      <li><strong>Monkeys:</strong> Taxonomy, diversity, and environmental adaptations.</li>
+      <li><strong>Sea Cucumbers:</strong> Genetic diversity for fisheries management.</li>
+    </ul>
+  </div>
 
-  <h3>Population Genetics</h3>
-  <p>
-    Population genetics is central to our work, helping us understand species diversity, connectivity, and evolutionary history. We provide insights into species resilience, adaptation, and conservation needs by analyzing genetic structure and variations.
-  </p>
-  <ul>
-    <li><strong>Corals:</strong> Our research focuses on exploring genetic diversity and population structure while identifying markers for thermotolerance and resilience in corals. Our goal is to enhance the understanding of connectivity among reefs in Kenya. Additionally, we employ molecular phylogenomics to clarify the taxonomy of corals involved in restoration efforts across the region.</li>
-    <li><strong>Billfish:</strong> Our research emphasizes evolutionary genetics and divergence, contributing to the sustainable management of fisheries.</li>
-    <li><strong>Elephants:</strong> We analyze genetic diversity and connectivity to gain insights into gene flow and hybridization within elephant populations. Our research also examines the impact of habitat fragmentation on these populations, seeking to understand how these factors influence their survival and overall genetic health.</li>
-    <li><strong>Monkeys:</strong> We explore the taxonomy, diversity, and adaptive responses of species to environmental changes, aiming to understand how these factors influence their survival and evolution.</li>
-    <li><strong>Sea Cucumbers:</strong> We assess genetic diversity to enhance fisheries management and promote sustainable practices within this vital marine resource.</li>
-  </ul>
+  <div id="Microbiome" class="tabcontent">
+    <h3>Microbiome</h3>
+    <p>Investigating microbial communities in marine species.</p>
+    <img src="microbiome.jpg" alt="Microbiome research">
+    <ul>
+      <li><strong>Coral Symbionts:</strong> Microbial interactions for resilience.</li>
+      <li><strong>Coral-Associated Microbiome:</strong> Impact of human activities.</li>
+    </ul>
+  </div>
 
-  <h3>Microbiome</h3>
-  <p>
-    Microbial communities play an essential role in ecosystem health and species survival. We use metagenomics to investigate microbiomes associated with marine species, particularly corals.
-  </p>
-  <ul>
-    <li><strong>Coral Symbionts:</strong> We study the intricate relationships between corals and their microbial symbionts to gain a deeper understanding of resilience mechanisms. Our research aims to inform effective conservation and restoration strategies that enhance coral resilience in the face of environmental stressors by exploring how these symbiotic interactions contribute to coral health and adaptability.</li>
-    <li><strong>Coral-Associated Microbiome:</strong> Our research investigates the variations in the structure and function of coral reef microbiomes along the Kenyan coast, focusing on how local anthropogenic impacts affect these essential communities. We aim to inform conservation strategies that enhance coral resilience against human-induced stressors through these intricate relationships.</li>
-  </ul>
+  <div id="DiseaseEcology" class="tabcontent">
+    <h3>Disease Ecology</h3>
+    <p>Exploring environmental and genetic factors in disease spread.</p>
+    <img src="sea-turtle.jpg" alt="Sea turtle research">
+    <ul>
+      <li><strong>Sea Turtles:</strong> Pollution and genetic factors in fibropapillomatosis.</li>
+      <li><strong>Coral Pathogens:</strong> Molecular detection of coral diseases.</li>
+    </ul>
+  </div>
 
-  <h3>Disease Ecology</h3>
-  <p>
-    We investigate the interactions between environmental factors, host genetics, and pathogens to understand disease dynamics in marine organisms.
-  </p>
-  <ul>
-    <li><strong>Sea turtles:</strong> We study the environmental and genetic factors driving fibropapillomatosis in sea turtles, focusing on how pollution and genetic predisposition contribute to this disease. Our goal is to enhance understanding and inform conservation strategies for affected turtle populations.</li>
-    <li><strong>Coral pathogens:</strong> We utilize a molecular approach to detect disease-causing microbes in corals aiming to support conservation efforts. Identifying these organisms leads to a better understanding of their impact on coral health and developing targeted strategies to protect and restore vulnerable reef ecosystems.</li>
-  </ul>
+  <div id="Ecology" class="tabcontent">
+    <h3>Ecology</h3>
+    <p>Studying species behavior, habitat use, and conservation.</p>
+    <img src="sea-turtle-nesting.jpg" alt="Sea turtle nesting">
+    <ul>
+      <li><strong>Sea Turtles:</strong> Nesting beach monitoring and conservation.</li>
+    </ul>
+  </div>
 
-  <h3>Ecology</h3>
-  <p>
-    We conduct ecological research to understand species behavior, habitat use, and conservation needs.
-  </p>
-  <ul>
-    <li><strong>Sea turtles:</strong> We identify and monitor critical nesting beaches for sea turtles, gathering vital data on breeding patterns and environmental threats. This research is essential for developing effective conservation strategies to protect these key habitats and ensure the survival of sea turtle populations.</li>
-  </ul>
-
-  <h3>Support</h3>
-  <p>
-    We provide expert consultation and support for conservation efforts and biodiversity research by employing innovative approaches. Our work improves the understanding of ecological dynamics and informs effective strategies for conserving biodiversity. Through collaboration and knowledge sharing, we aim to empower researchers and organizations in their conservation initiatives.
-  </p>
-  <ul>
-    <li><strong>Forensics:</strong> We collaborate with the Kenya Wildlife Service (KWS) to combat wildlife trafficking using genetic forensics. This helps to provide crucial evidence that strengthens law enforcement efforts and helps protect endangered wildlife species.</li>
-    <li><strong>Killifish:</strong> We utilize environmental DNA (eDNA) analysis to identify suspected killifish species, cataloging them and assessing genetic diversity. This helps us to gain critical insights into ecosystem health and biodiversity, driving effective conservation efforts.</li>
-  </ul>
+  <div id="Support" class="tabcontent">
+    <h3>Support</h3>
+    <p>Providing expert conservation support and forensic research.</p>
+    <img src="wildlife-forensics.jpg" alt="Wildlife forensics">
+    <ul>
+      <li><strong>Forensics:</strong> Genetic analysis for wildlife crime investigation.</li>
+      <li><strong>Killifish:</strong> Environmental DNA for species identification.</li>
+    </ul>
+  </div>
 </section>
 
     <section id="partners">
