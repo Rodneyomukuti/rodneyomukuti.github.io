@@ -96,8 +96,10 @@ p {
     margin: 10px 0;
 }
 
+/* Entry styles */
 .entry {
     margin-bottom: 20px;
+    overflow: auto; /* Clear floats */
 }
 
 .entry img {
@@ -105,6 +107,13 @@ p {
     height: auto; /* Maintain aspect ratio */
     margin-right: 10px; /* Space between image and text */
     float: left; /* Align images to the left */
+}
+
+/* Clearfix for entries */
+.entry::after {
+    content: "";
+    display: table;
+    clear: both; /* Clear floats */
 }
 
 /* Partner and member styles */
