@@ -96,6 +96,8 @@ p {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    width: 100px; /* Set a fixed width for research theme images */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .entry {
@@ -103,8 +105,8 @@ p {
 }
 
 .entry img {
-    width: 100px;
-    height: auto;
+    width: 100px; /* Set a fixed width for entry images */
+    height: auto; /* Maintain aspect ratio */
     margin-right: 10px;
     float: left;
 }
@@ -116,8 +118,8 @@ p {
 }
 
 .partner img, .member img, .funder img {
-    width: 100px;
-    height: auto;
+    width: 100px; /* Set a fixed width for partner, member, and funder images */
+    height: auto; /* Maintain aspect ratio */
     margin-right: 15px;
 }
 
