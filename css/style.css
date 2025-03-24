@@ -99,7 +99,7 @@ p {
 /* Entry styles */
 .entry {
     display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
+    align-items: flex-start; /* Align items to the start */
     margin-bottom: 20px;
 }
 
@@ -107,6 +107,13 @@ p {
     max-width: 100px; /* Set a max width for images */
     height: auto; /* Maintain aspect ratio */
     margin-right: 10px; /* Space between image and text */
+}
+
+/* Clearfix for entries */
+.entry::after {
+    content: "";
+    display: table;
+    clear: both; /* Clear floats */
 }
 
 /* Partner and member styles */
@@ -158,9 +165,12 @@ footer {
         width: 100%;
     }
 
+    .entry {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
     .entry img {
-        float: none;
-        display: block;
-        margin: 0 auto 10px;
+        margin-bottom: 10px; /* Space below the image */
     }
 }
