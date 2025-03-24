@@ -91,12 +91,12 @@ p {
 }
 
 .tabcontent {
-    display: none; /* Ensure only active tab is shown */
-    padding: 20px;
-    border: 1px solid #007BFF;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+    display: block; 
+    visibility: visible;
+    opacity: 1;
+    height: auto;
 }
+
 
 .tabcontent.active {
     display: block; /* Show only the active tab */
