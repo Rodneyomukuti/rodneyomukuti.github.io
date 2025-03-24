@@ -100,30 +100,24 @@ h3 {
 }
 
 /* Partner and Member Styles */
-.partner,
-.member,
-.funder {
+.partner, .member, .funder {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.partner img,
-.member img,
-.funder img {
+.partner img, .member img, .funder img {
     width: 80px;
     height: auto;
     margin-right: 15px;
 }
 
-.partner a,
-.funder a {
+.partner a, .funder a {
     color: #007BFF;
     text-decoration: none;
 }
 
-.partner a:hover,
-.funder a:hover {
+.partner a:hover, .funder a:hover {
     text-decoration: underline;
 }
 
@@ -150,5 +144,14 @@ footer {
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+
+    .entry {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .entry img {
+        margin-bottom: 10px;
     }
 }
