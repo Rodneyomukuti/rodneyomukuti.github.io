@@ -1,47 +1,154 @@
-/* General Styles */ body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-header { background: #007BFF; color: #fff; padding: 20px 0; text-align: center; }
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
 
-header h1 { margin: 0; }
+header h1 {
+    margin: 0;
+}
 
-nav ul { list-style: none; padding: 0; }
+nav ul {
+    list-style: none;
+    padding: 0;
+}
 
-nav ul li { display: inline; margin: 0 15px; }
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-nav ul li a { color: #fff; text-decoration: none; }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
-nav ul li a:hover { text-decoration: underline; }
+nav ul li a:hover {
+    text-decoration: underline;
+}
 
-/* Main Content */ main { padding: 20px; }
+/* Main Content */
+main {
+    padding: 20px;
+}
 
-section { margin-bottom: 40px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+section {
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-h2 { color: #007BFF; }
+h2 {
+    color: #007BFF;
+}
 
-h3 { color: #333; }
+h3 {
+    color: #333;
+}
 
-/* Tab Styles */ .tab { overflow: hidden; margin-bottom: 20px; }
+/* Tab Styles */
+.tab {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
 
-.tab button { background-color: #007BFF; color: white; border: none; padding: 10px 15px; cursor: pointer; transition: background-color 0.3s; }
+.tab button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-.tab button:hover { background-color: #0056b3; }
+.tab button:hover {
+    background-color: #0056b3;
+}
 
-.tabcontent { display: none; padding: 20px; border: 1px solid #007BFF; border-radius: 8px; background-color: #f9f9f9; }
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #007BFF;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
 
-.entry { display: flex; align-items: center; margin-bottom: 15px; }
+.entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
 
-.entry img { width: 100px; height: auto; margin-right: 15px; border-radius: 5px; }
+.entry img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
 
-/* Partner and Member Styles */ .partner, .member, .funder { display: flex; align-items: center; margin-bottom: 15px; }
+/* Partner and Member Styles */
+.partner,
+.member,
+.funder {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
 
-.partner img, .member img, .funder img { width: 80px; height: auto; margin-right: 15px; }
+.partner img,
+.member img,
+.funder img {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
 
-.partner a, .funder a { color: #007BFF; text-decoration: none; }
+.partner a,
+.funder a {
+    color: #007BFF;
+    text-decoration: none;
+}
 
-.partner a:hover, .funder a:hover { text-decoration: underline; }
+.partner a:hover,
+.funder a:hover {
+    text-decoration: underline;
+}
 
-/* Resource Section */ #resource { background-color: #e9ecef; padding: 20px; border-radius: 8px; }
+/* Resource Section */
+#resource {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+}
 
-/* Footer Styles */ footer { text-align: center; padding: 20px 0; background: #007BFF; color: #fff; position: relative; bottom: 0; width: 100%; }
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #007BFF;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
-/* Responsive Styles */ @media (max-width: 768px) { nav ul li { display: block; margin: 10px 0; }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
